@@ -6,14 +6,14 @@ Processor::Processor() :
 	_cores = 6;
 	_tdp = 65;
 }
-Processor::Processor(int id, int price, string name, string description, float freq, int cores, int tdp) :
+Processor::Processor(int id, int price, string name, string description, double freq, int cores, int tdp) :
 	GoodBasic{ id, price, name, description } {
 	_freq = freq;
 	_cores = cores;
 	_tdp = tdp;
 }
 
-float Processor::getFreq() {
+double Processor::getFreq() {
 	return _freq;
 }
 
@@ -39,10 +39,6 @@ void Processor::setCores(int newCores) {
 	}
 }
 
-int Processor::getCores() {
-	return _cores;
-}
-
 int Processor::getTDP()
 {
 	return _tdp;
@@ -53,7 +49,7 @@ void Processor::setTDP(int newTDP) {
 }
 
 void Processor::toString() {
-	cout << "toString From Chipsi:" << getItemId() << " " << getPrice()
+	cout << "toString From Processor:" << getItemId() << " " << getPrice()
 		<< " " << getName() << " " << getDescription() << " Частота:"
 		<< getFreq() << "  Кол-во ядер:" << getCores() 
 		<< "  Тепловыделение:" << getTDP() << "\n";

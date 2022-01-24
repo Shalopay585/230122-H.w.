@@ -3,14 +3,14 @@
 class Processor : public GoodBasic
 {
 private:
-	float _freq;
+	double _freq;
 	int _cores;
 	int _tdp;
 public:
 	Processor();
-	Processor(int id, int price, string name, string description, float freq, int cores, int tdp);
+	Processor(int id, int price, string name, string description, double freq, int cores, int tdp);
 
-	float getFreq();
+	double getFreq();
 
 	void setFreq(float newFreq);
 
