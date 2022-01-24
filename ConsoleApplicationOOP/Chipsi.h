@@ -7,7 +7,7 @@ private:
 	string _typeOfTaste;
 public:
 	Chipsi();
-	Chipsi(int id, int price, string name, string description, int _weight, string _typeOfTaste);
+	Chipsi(int id, int price, string name, string description, int weight, string typeOfTaste);
 
 	int getWeight();
 
