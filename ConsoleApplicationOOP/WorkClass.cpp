@@ -2,9 +2,9 @@
 void WorkClass::startWork() {
     std::cout << "Hello Привет World!\n";
 
-    GoodBasic* universalPointer01 = new Chipsi;
+    GoodBasic* universalPointer01 = new Processor;
     static_cast<GoodBasic*>(universalPointer01)->toString();
-    static_cast<Chipsi*>(universalPointer01)->toString();
+    static_cast<Processor*>(universalPointer01)->toString();
 
    // Chipsi chips01;
     //chips01.toString();
